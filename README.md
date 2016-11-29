@@ -3,6 +3,13 @@
 ##Summary
 This visualisation presents the mean income and loan amounts recorded quartarly before and after the fall of the Lehman Brothers in 2008. The recorded period is from 2006 until 2014. The data is obtained from Prosper and has further been categorized and summarized with the help of R.
 
+###Key takeaways from the visualization:
+1. Retired and self-employed borrowers have the highest volatility in their borrowed amount.
+2. The borrowed amount by retired people was least affected by the crisis.
+3. The most risk averse employment group is the self-employed people who experienced the sharpest drop in borrowed amount after the bankrupcy of the Lehman Brothers.
+4. Self-employed borrowers have the largest increase in stated monthly income after the crisis.
+5. the Not available employment group seem to have some kind of relation to the full-time employment group.
+
 ##Design
 The chosen design gives the reader the chance to interact with the graph by choosing the category of interest. The reader can choose to view all occupations or even pick the one of greatest interest.
 
