@@ -4,7 +4,7 @@
 This visualization presents the mean income and loan amounts recorded quarterly before and after the fall of the Lehman Brothers in 2008. The main variables are the size of the borrowed amount, the stated monthly income and the time of the recording. The change of the number and kinds of the employment categories are due to the fact that the company was founded 2005 and at the end of 2007 changed their policy due to negative effect of their earlier employment definitions. The borrowed amount and income for the self-employed and part-time employed people have the highest fluctuations.
 
 ##Design
-The initial chosen design for the presented graph was bubble graph combined with line chart where each category can be either included or excluded. After collected remarks from at least 4 people I decided to include information about the source of information, the reasons about the changes in the definitions of the different employment groups. After the review of my initial visualization I enlarged and centered the text "Click legend to show/hide category:". I also included changed the title of the y axis and included information about what the bubble size represents.
+The initial chosen design for the presented graph was bubble graph combined with line chart where each category can be either included or excluded. After collected remarks from at least 4 people I decided to include information about the source of information, the reasons about the changes in the definitions of the different employment groups. After the review of my initial visualization I enlarged and centered the text "Click legend to show/hide category:". I also included changed the title of the y axis and included information about what the bubble size represents. After the first review of my project I added line marking the Lehman Brothers fall in Q3 2008. I have also selected only the categories of interest: Full-time employed, Part-time employed, Self-employed and retired. I have still not succeeded in toggling categories of my graph.
 
 ##Feedback 
 1. What do you notice in the visualisation?
@@ -63,7 +63,12 @@ Jonas:
 "I notice that the different employment groups have changed through the years but why the observations start 2006?
 I notice that people were borrowing more before the crisis. After the crisis the self-employed people were more risk averse. Around 2012 people were borrowing more. Could it be due to lower interest rates?"
 
+First project review:
+Suggestion 1: Have you considered another vertical axis to mark 2008 Lehman crash date? Easy to do, cuts down your explanatory text and helps with pre-processing.
 
+Suggestion 2: I think the graph is very crowded initially. Could you start with just the line graph and small bubbles and either add a button to show/hide monthly income (still bubble size) or only show monthly income when one loan category is collected?
+
+Suggestion 3: Other and Not Available seem to be the same thing but before and after the crash. Can you merge them? Or do you need them? Do they help tell the story? What % of the data do they represent?
 
 ##Resources
 * Graph design is based on:[Dimple]( http://dimplejs.org/advanced_examples_viewer.html?id=advanced_interactive_legends)
@@ -71,5 +76,6 @@ I notice that people were borrowing more before the crisis. After the crisis the
 * Prosper information: [Prosper employment](http://www.p2p-banking.com/tag/prospercom/page/2/)
 * Formatting .md file: [.md](http://nestacms.com/docs/creating-content/markdown-cheat-sheet)
 * Forum discussions: [discussions](https://discussions.udacity.com/t/bubble-scaling-in-dimple-js/161941/6)
+* Verticle line : [verticle line](http://stackoverflow.com/questions/29352970/dimple-js-add-vertical-line)
 
 
