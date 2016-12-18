@@ -20,6 +20,29 @@
         z = myChart.addMeasureAxis("z", "StatedMonthlyIncome");
         mySeries = myChart.addSeries(["Employment"], dimple.plot.line);
         mySeries = myChart.addSeries(["Employment"], dimple.plot.scatter);
+        mySeries.afterDraw = function (s, d) {
+          var s = d3.select(s),
+          LehmanBr = dimple.getUniqueValues("x", "2008-Q3");
+
+          svg.append("rect")
+          .attr("x", LehmanBr)
+          .attr("y", myChart._yPixels())
+          .attr("y2", myChart._yPixels() + myChart._heightPixels())
+          .style("stroke", "red")
+          .style("stroke-dasharray", "3");
+
+          svg.append("text")
+          .data([ "-2008 Lehman brothers bankrupcy"])
+          .enter()
+          .append("text")
+          .attr("x", LehmanBr)
+          .attr("y", function (d, i) { return 130 + i * 14; })
+          .style("font-family", "sans-serif")
+          .style("font-size", "14px")
+          .text(function (d) { return d; });
+
+
+        };
         var myLegend = myChart.addLegend(630, 140, 60, 300, "Right");
         myChart.draw();
 
